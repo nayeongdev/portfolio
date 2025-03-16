@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>김나영 포트폴리오</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/projects.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <img class="image-gradient" src="images/gradient.png" alt="gradient" />
+    <div class="layer-blur"></div>
+
+    <div class="container">
+      <header>
+        <h1 data-aos="fade-down" data-aos-duration="1500" class="logo">
+          <a href="./index.html">Nayeong Kim</a>
+        </h1>
+        <!-- <nav>
+          <a data-aos="fade-down" data-aos-duration="2000" href="#">About</a>
+          <a data-aos="fade-down" data-aos-duration="2500" href="#">Projects</a>
+          <a data-aos="fade-down" data-aos-duration="3000" href="#">Contact</a>
+        </nav> -->
+
+        <!-- <button
+          data-aos="fade-down"
+          data-aos-duration="1500"
+          class="btn-download"
+        >
+          Download Resume
+        </button> -->
+      </header>
+
+      <main>
+        <div class="content">
+          <section class="my-projects">
+            <h1 class="section-title">My Projects 👩‍💻</h1>
+            <div class="project-card">
+              <div class="project-imgbox">
+                <img src="images/sample.png" alt="sample" />
+              </div>
+              <div class="project-info">
+                <h2>
+                  Project <span class="gradient">Sample1</span>
+                </h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quisquam, quos.
+                </p>
+                <button
+                  class="btn-project"
+                  onclick="window.location.href='project.html?id=project1'"
+                >
+                  <i class="bx bx-link-external"></i> View Project
+                </button>
+              </div>
+            </div>
+            
+            <!-- 프로젝트 2 -->
+            <div class="project-card">
+              <div class="project-imgbox">
+                <img src="images/sample.png" alt="sample" />
+              </div>
+              <div class="project-info">
+                <h2>
+                  Project <span class="gradient">Sample2</span>
+                </h2>
+                <p>
+                  두 번째 프로젝트에 대한 간략한 설명입니다.
+                </p>
+                <button
+                  class="btn-project"
+                  onclick="window.location.href='project.html?id=project2'"
+                >
+                  <i class="bx bx-link-external"></i> View Project
+                </button>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

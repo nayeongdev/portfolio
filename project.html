@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>김나영 포트폴리오</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://uicdn.toast.com/editor/latest/toastui-editor-viewer.min.css"
+    />
+    <style>
+      /* Toast UI Editor Viewer 글자 색상 변경 */
+      .toastui-editor-contents {
+        color: white !important;
+      }
+      .toastui-editor-contents h1,
+      .toastui-editor-contents h2,
+      .toastui-editor-contents h3,
+      .toastui-editor-contents h4,
+      .toastui-editor-contents h5,
+      .toastui-editor-contents h6,
+      .toastui-editor-contents p,
+      .toastui-editor-contents li,
+      .toastui-editor-contents a {
+        color: white !important;
+      }
+      .toastui-editor-contents code {
+        color: #f8f8f8 !important;
+        background-color: #333 !important;
+      }
+      .toastui-editor-contents blockquote {
+        border-left-color: #727fde !important;
+        color: #cccccc !important;
+      }
+    </style>
+  </head>
+  <body>
+    <img class="image-gradient" src="images/gradient.png" alt="gradient" />
+    <div class="layer-blur"></div>
+
+    <div class="container">
+      <header>
+        <h1 data-aos="fade-down" data-aos-duration="1500" class="logo">
+          <a href="./index.html">Nayeong Kim</a>
+        </h1>
+        <!-- <nav>
+          <a data-aos="fade-down" data-aos-duration="2000" href="#">About</a>
+          <a data-aos="fade-down" data-aos-duration="2500" href="#">Projects</a>
+          <a data-aos="fade-down" data-aos-duration="3000" href="#">Contact</a>
+        </nav> -->
+
+        <!-- <button
+          data-aos="fade-down"
+          data-aos-duration="1500"
+          class="btn-download"
+        >
+          Download Resume
+        </button> -->
+      </header>
+
+      <main>
+        <div class="content">
+          <section class="my-project">
+            <div id="viewer"></div>
+          </section>
+        </div>
+      </main>
+    </div>
+
+    <script src="https://uicdn.toast.com/editor/latest/toastui-editor-viewer.js"></script>
+    <script>
+      // URL에서 프로젝트 ID 가져오기
+      const urlParams = new URLSearchParams(window.location.search);
+      const projectId = urlParams.get('id') || 'default';
+      
+      // 마크다운 파일 가져오기
+      fetch(`data/${projectId}.md`)
+        .then(response => {
+          if (!response.ok) {
+            return fetch('data/default.md');
+          }
+          return response;
+        })
+        .then(response => response.text())
+        .then(markdownContent => {
+          // 마크다운 뷰어 초기화
+          const Viewer = toastui.Editor;
+          const viewer = new Viewer({
+            el: document.querySelector('#viewer'),
+            height: '600px',
+            initialValue: markdownContent
+          });
+        })
+        .catch(error => {
+          console.error('마크다운 파일을 불러오는 중 오류가 발생했습니다:', error);
+          document.querySelector('#viewer').innerHTML = '<p>콘텐츠를 불러올 수 없습니다.</p>';
+        });
+    </script>
+  </body>
+</html>
