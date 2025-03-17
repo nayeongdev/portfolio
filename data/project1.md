@@ -1,22 +1,26 @@
-# 프로젝트 1: 웹 포트폴리오
+# 주식 투자 정보 플랫폼
 
 ## 소개
-이 프로젝트는 웹 개발 포트폴리오의 첫 번째 프로젝트입니다. 사용자 친화적인 인터페이스와 모던한 디자인을 갖춘 웹사이트를 개발했습니다.
+- AI 추천 기반 국내 주식 투자 정보 제공
+- 주식 정보 데이터의 직관적 시각화 및 커뮤니티 기능 제공
 
 ## 기술 스택
-- HTML5
-- CSS3
-- JavaScript
-- React.js
+- React (Vite)
+- TypeScript, Zod
+- TanStack Query (React Query), Axios
+- Tailwind, Radix UI
+- Chart.js
 
 ## 주요 기능
-1. 반응형 디자인
-2. 모던 UI/UX
-3. 다크 모드 지원
-4. 애니메이션 효과
-
-## 개발 과정
-프로젝트 기획부터 디자인, 개발, 배포까지 전 과정을 담당했습니다. 특히 사용자 경험을 최우선으로 고려하여 직관적인 인터페이스를 구현했습니다.
+1. 주가 정보 표시
+   - 현재가, 전일 대비 등락률 표시
+   - 시가, 고가, 저가, 거래량 등 기본 정보 제공
+   - 주요 지표 요약 정보 제공
+2. 기업 재무정보 분석
+   - 분기별/연간 재무제표 데이터 표시
+   - 주요 재무비율 시각화 (PER, PBR, ROE 등)
+   - 투자 의견 시각화 (테이블, 막대 차트)
+3. 사용자 주식 관심 종목 추가/삭제
 
 ## 배운 점
 - 컴포넌트 기반 개발의 효율성
@@ -24,5 +28,5 @@
 - 성능 최적화 기법
 
 ## 링크
-- [GitHub 저장소](https://github.com/nayeongdev/project1)
-- [라이브 데모](https://nayeongdev.github.io/project1) 
+- [라이브 데모](https://dev.profitkey.click/stocks/035420) 
+- [GitHub 저장소](https://github.com/profit-key/profitkey-front)
