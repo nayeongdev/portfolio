@@ -26,26 +26,24 @@
   margin: 5% 0;
   display: flex;
   flex-direction: column;
-  gap: 10%;
+  gap: 4rem;
   align-items: center;
-  justify-content: start;
-  position: relative;
-  height: 100vh;
+  justify-content: space-evenly;
+  min-height: 100vh;
 }
 
 .project-card {
   display: flex;
-  height: 40%;
   align-items: center;
-  justify-content: center;
-  gap: 5%;
+  justify-content: space-between;
+  gap: 4rem;
+  width: 100%;
+  margin-bottom: 2rem;
 }
 
 .project-imgbox {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 50%;
+  flex: 1;
+  max-width: 500px;
   cursor: pointer;
   min-width: 300px;
   transition: 0.5s;
@@ -65,29 +63,17 @@
 }
 
 .project-info {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  justify-content: center;
-  width: 50%;
-  padding-left: 10%;
+  flex: 1;
 }
 
 .project-info h2 {
-  width: 90%;
   font-size: 1.5rem;
   font-weight: bold;
-  white-space: nowrap;
-  margin-bottom: 10px;
-  min-width: 450px;
+  margin-bottom: 1rem;
 }
 
 .project-info p {
-  width: 90%;
-  max-width: 400px;
-  min-width: 300px;
   margin-bottom: 2rem;
-  margin-top: 0;
 }
 
 .project-info button {
@@ -104,4 +90,28 @@
 .project-info button:hover {
   box-shadow: 0 0 15px #727fde86;
   opacity: 0.7;
+}
+
+/* MOBILE RESPONSE */
+@media (max-width: 768px) {
+  .my-projects {
+    padding-left: 0;
+  }
+
+  .project-card {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .project-imgbox {
+    width: 100%;
+    height: 200px;
+  }
+
+  .project-info {
+    width: 100%;
+    text-align: center;
+  }
 }
