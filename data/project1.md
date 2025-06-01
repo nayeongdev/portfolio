@@ -26,30 +26,30 @@
 
 ### ✅ **주가 정보 표시 기능 구현**
 
-![alt text](../images/profitkey/detail1.JPG)
+![alt text](/portfolio/images/profitkey/detail1.JPG)
 - 현재가, 전일 대비 등락률 등 기본 정보 표시
 - Chart.js를 활용한 주요 지표 시각화
 - 실시간 데이터 업데이트 구현
 
 ### ✅ **기업 재무정보 분석 기능 개발**
 
-![alt text](../images/profitkey/detail2.JPG)
+![alt text](/portfolio/images/profitkey/detail2.JPG)
 - 분기별/연간 재무제표 데이터 표시
 - PER, PBR, ROE 등 주요 재무비율 시각화
 - 투자 의견 테이블 및 차트 구현
 
 ### ✅ **커뮤니티 기능 구현**
 
-![alt text](../images/profitkey/commu1.JPG)
-![alt text](../images/profitkey/commu2.JPG)
-![alt text](../images/profitkey/commu5.JPG)
+![alt text](/portfolio/images/profitkey/commu1.JPG)
+![alt text](/portfolio/images/profitkey/commu2.JPG)
+![alt text](/portfolio/images/profitkey/commu5.JPG)
 - 댓글/대댓글 CRUD 기능 개발
 - 좋아요 기능 구현
 - 무한 스크롤 적용
 
 ### ✅ **주식 랭킹 보드 구현**
 
-![alt text](../images/profitkey/순위.JPG)
+![alt text](/portfolio/images/profitkey/순위.JPG)
 - 실시간 주식 랭킹 표시
 - 정렬 및 필터링 기능 구현
 
